@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+//* ADD THESE FOR REDUX
+import { Provider } from 'react-redux';
+import store from './redux/store';
+
 import './styles/main.scss';
-// import './index.css';
 import { Home } from './views';
-// import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <Provider store={store}>
+      <Home />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root'),
 );
