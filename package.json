@@ -8,11 +8,6 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "babelMacros": {
-    "twin": {
-      "preset": "styled-components"
-    }
-  },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
     "react": "^18.0.0",
